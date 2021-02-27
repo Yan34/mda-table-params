@@ -1,0 +1,42 @@
+<div class="tableParams brandFont"> <!-- vertical align -->
+  <div class="dataSelect"> <!-- horizontal align -->
+    <div class="dataSelect-left">
+      <select class="tableParamsSelect brandFont" name="cugSelect">
+        <option>CUG</option>
+        <option>Cug 1</option>
+        <option>Cug 2</option>
+        <option>Cug 3</option>
+      </select>
+
+      <select class="tableParamsSelect brandFont" name="buildingSelect">
+        <option>All Buildings</option>
+        <option>Building 1</option>
+        <option>Building 2</option>
+        <option>Building 3</option>
+      </select>
+
+      <img class="qrImg" [src]="qrLink">
+    </div>
+
+    <div class="dataSelect-right">
+      <button class="syncButton brandFont">Synchronise</button>
+
+      <input class="searchField brandFont" [ngStyle]="{
+        backgroundImage: 'url(' + searchImgLink + ')'
+      }" type="text" placeholder="Search">
+    </div>
+  </div>
+  <!-- switch -->
+  <div class="toggleTable">
+    <p class="toggleTableText" [ngStyle]="{
+          color: switchToggle === false ? checkedOptionColor : uncheckedOptionColor
+        }">Invoices</p>
+    <label class="switch">
+      <input type="checkbox" (click)="switchToggled()">
+      <span class="slider round"></span>
+    </label>
+    <p class="toggleTableText" [ngStyle]="{
+          color: switchToggle === true ? checkedOptionColor : uncheckedOptionColor
+        }">Meter Readings</p>
+  </div>
+</div>

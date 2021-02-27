@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.brandColor {
+  background-color: #B2895A;
+}
+
+.brandFont {
+  font-family: 'Cabin', sans-serif;
+}
+
+.tableParams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dataSelect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.dataSelect-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex: 0 1 54%;
+}
+
+.dataSelect-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex: 0 1 35%;
+}
+
+.tableParamsSelect {
+  height: 30px;
+  flex: 0 1 301px;
+  border-radius: 2px;
+  margin: 0 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  background: #EFEFEF;
+  border: none;
+  padding-left: 14px;
+}
+
+.qrImg {
+  height: 35px;
+  width: 35px;
+  margin: 0 0.5rem;
+}
+
+.syncButton {
+  cursor: pointer;
+  height: 30px;
+  flex: 0 1 141px;
+  margin: 0 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+  background: #8AA128;
+  color: #FFFFFF;
+  border: none;
+}
+
+.searchField {
+  height: 30px;
+  flex: 0 1 251px;
+  border-radius: 2px;
+  margin: 0 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  background: #EFEFEF;
+  background-size: 17px;
+  background-position: 8px 6px;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0px;
+  padding-left: 30px;
+}
+
+.toggleTable {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.toggleTableText {
+  margin: 0 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4C4C4;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin: 0.5rem 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C4C4C4;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #B2895A;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #B2895A;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 38px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
